@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh diem trung binh</title>
+</head>
+<body>
+<input type="text" value="Nhập điểm vật lý" id="diemLy">
+<input type="text" value="Nhập điểm hóa" id="diemHoa">
+<input type="text" value="Nhập điểm sinh học" id="diemSinhHoc">
+<button onclick="demo()">Tính điểm trung bình</button>
+<script>
+    function demo(){
+        let diemVatLy = +document.getElementById("diemLy").value;
+        let diemHoaHoc = +document.getElementById("diemHoa").value;
+        let diemSinhHoc = +document.getElementById("diemSinhHoc").value;
+        dtb = (diemVatLy + diemHoaHoc + diemSinhHoc)/3;
+        document.write(dtb);
+    }
+
+</script>
+
+</body>
+</html>

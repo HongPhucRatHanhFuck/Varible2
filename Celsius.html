@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chuyen Doi Celsius</title>
+</head>
+<input type="number" placeholder="Enter number Celsius" id="C">
+<button onclick="ResultValue()">Enter</button>
+<p id=Convert></p>
+<body>
+<script>
+	let Celsius = document.getElementById("C").value;
+	let Fahrenheit = (((9 * Celsius) / 5) + 32);
+	function ResultValue(){
+		document.getElementById("Convert").innerHTML = "ResultValue: " + Fahrenheit;
+	}
+</script>
+</body>
+</html>

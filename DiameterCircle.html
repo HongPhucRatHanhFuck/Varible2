@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Diameter Circle</title>
+</head>
+<body>
+<input type="text" placeholder="Nhập bán kính hình tròn" id="banKinh">
+<button onclick="ResultValue()">Tính chu vi hình tròn</button>
+<p id="Result"></p>
+<script>
+	function ResultValue() {
+		let r = document.getElementById("banKinh").value;
+		let DiameterCircle = 2 * Math.PI * r;
+		document.getElementById("Result").innerHTML = "Chu vi của hình tròn =" + DiameterCircle;
+		
+	}
+</script>
+</body>
+</html>
